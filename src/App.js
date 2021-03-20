@@ -50,7 +50,7 @@ class App extends Component{
     return (
       <div >
         <Navbar />
-        <div className="App">
+        <div className="lg:p-32 p-5">
           <Site />
           <About />
           <ProjectList data ={Services}/>

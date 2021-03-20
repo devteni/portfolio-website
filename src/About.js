@@ -24,10 +24,11 @@ class About extends Component{
                 <div className="w-full text-center lg:w-2/5">
                     <p className="text-2xl font-extrabold ml-8 mt-4">SKILLS</p>
                     <ul className="ml-10 flex flex-wrap lg:flex-row justify-between">
-                        <li className="p-3 m-1 w-2/5 font-bold bg-gray-700 hover:bg-gray-800 rounded-xl">HTML & CSS</li>
-                        <li className="p-3 m-1 w-2/5 font-bold bg-gray-700 hover:bg-gray-800 rounded-xl">JAVASCRIPT</li>
-                        <li className="p-3 m-1 w-2/5 font-bold bg-gray-700 hover:bg-gray-800 rounded-xl">REACT</li>
-                        <li className="p-3 m-1 w-2/5 font-bold bg-gray-700 hover:bg-gray-800 rounded-xl">PYTHON</li>
+                        <li className="p-3 m-1 w-2/5 font-bold bg-gray-700 hover:text-blue-500 rounded-xl">HTML & CSS</li>
+                        <li className="p-3 m-1 w-2/5 font-bold bg-gray-700 hover:text-blue-500 rounded-xl">JAVASCRIPT</li>
+                        <li className="p-3 m-1 w-2/5 font-bold bg-gray-700 hover:text-blue-500 rounded-xl">REACT</li>
+                        <li className="p-3 m-1 w-2/5 font-bold bg-gray-700 hover:text-blue-500 rounded-xl">PYTHON</li>
+                        <li className="p-3 m-1 w-2/5 font-bold bg-gray-700 hover:text-blue-500 rounded-xl">GIT</li>
                         
                     </ul>
                 </div>
