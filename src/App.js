@@ -5,11 +5,16 @@ import Navbar from './Navbar'
 import About from './About';
 import ProjectList from "./ProjectList";
 import Links from "./Links"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 class App extends Component{
   constructor(){
     super();
+    AOS.init({
+      duration: 1200
+    })
     this.state = {
         Services: [
           {
@@ -37,16 +42,18 @@ class App extends Component{
     }
 }
 
-
+  componentWillReceiveProps(){
+    AOS.refresh()
+  }
   render(){
     const { Services } = this.state;
     return (
-      <div>
-      <Navbar />
-        <div>
-        <Site />
-        <About />
-        <ProjectList data ={Services}/>
+      <div >
+        <Navbar />
+        <div className="App">
+          <Site />
+          <About />
+          <ProjectList data ={Services}/>
         </div>
         <Links />
       </div>

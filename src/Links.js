@@ -1,9 +1,10 @@
 import React from "react";
-
+import "./App.css"
 const Links = () => {
     return(
-        <div className="flex justify-center">
-            <nav className="w-screen lg:px-10 sm:px-10 px-2 sm:flex justify-center border-gray-600 z-10"> 
+        <div className="w-screen">
+        <p className="text-4xl font-bold text-center tracking-widest" data-aos="ease-in">Get in touch.</p>
+            <nav className="lg:px-10 sm:px-10 px-2 sm:flex justify-center border-gray-600 z-10 center"> 
         
             <ul className="hidden sm:flex cursor-pointer" id="Links">
                 <li className="my-2 p-3 hover:text-blue-300 transition duration-200 hover:bg-gray-800 lg:hover:bg-gray-900 rounded-2xl sm:hover:bg-transparent text-blue-700">
