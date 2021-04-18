@@ -11,7 +11,7 @@ class About extends Component{
                 <hr />
                     <p className="text-3xl text-center font-extrabold">ABOUT ME</p>
                 <div className="mt-4 h-full flex flex-wrap lg:p-4 text-gray-100">
-                <img className="rounded-full w-1/5 h-1/5 lg:w-1/5 lg:h-1/5" alt="Profile image" src={Teni} data-aos="fade-up" />
+                <img className="rounded-full w-1/5 h-1/5 lg:w-1/5 lg:h-1/5" alt="Profile" src={Teni} data-aos="fade-up" />
                 <p className="px-2 w-4/5 lg:w-2/5 text-center break-normal">
                     I am a computer science undergraduate and software engineer. I use code to solve real-life problems
                     and also make money. I work with code and no-code technologies to build websites and web applications for businesses.
