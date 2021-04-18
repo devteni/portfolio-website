@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css"
+import "../containers/App.css"
 const Links = () => {
     return(
         <div className="w-screen">
