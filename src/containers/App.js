@@ -7,6 +7,7 @@ import ProjectList from "../components/ProjectList";
 import Links from "../components/Links"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 
 
 class App extends Component{
@@ -47,15 +48,27 @@ class App extends Component{
   render(){
     const { Services } = this.state;
     return (
-      <div >
-        <Navbar />
-        <div className="lg:p-32 p-5">
-          <Site />
-          <About />
-          <ProjectList data ={Services}/>
-        </div>
-        <Links />
-      </div>
+      <Router>
+        <div >
+          <Navbar />
+          <div className="lg:p-32 p-5">
+            <Site />
+            <About />
+            <ProjectList data ={Services}/>
+          </div>
+          <Links />
+       </div>
+      {/*
+        <Switch>
+         <Route path="/" exact component={Site} />
+         <Route path="/About" component={About} />
+         <Route path="/Projects" component={ProjectList} />
+         <Route path="/Links" component={Links} />
+       </Switch>
+
+      */}
+       
+      </Router>
     
   );
 }
