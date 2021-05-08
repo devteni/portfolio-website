@@ -10,11 +10,12 @@ const ProjectList = ({data}) => {
                     return(<Project key={i}
                             id={data[i].id}
                             image={data[i].image} 
-                            desc={data[i].desc}  />)
+                            desc={data[i].desc}
+                            tags={data[i].tags}  />)
                 })
             }
             </div>    
-
+            <p className="p-3 bg-gray-600 float-right mr-32 rounded-lg hover:bg-gray-700"><a href="https://github.com/Omoteniola-dev" rel="noreferrer" target="_blank">View more</a></p>
         </div>
     )
 }
