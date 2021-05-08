@@ -6,6 +6,30 @@ import { Link } from "react-router-dom";
 AOS.init({
     duration: 100
 })
+
+const navlinks = [
+    {
+        "text": "Home",
+        "link": "/"
+    }, 
+    {
+        "text": "Blog",
+        "link": "https://tenifatunmbi.hashnode.dev"
+    }, 
+    {
+        "text": "About",
+        "link": ""
+    }, 
+    {
+        "text": "Projects",
+        "link": ""
+    }, 
+    {
+        "text":"Get in touch",
+        "link": ""
+    }
+]
+console.log(navlinks.Home)
 const Navbar = () => {
     const handleClick = () => {
         const element = document.querySelector("#navContent");
@@ -32,31 +56,18 @@ const Navbar = () => {
                 </div>
         
             <ul className="hidden sm:flex cursor-pointer" id="navContent">
-                <li className="py-5 px-5 hover:text-blue-600 transition duration-200 hover:bg-gray-800 sm:hover:bg-transparent text-blue-700" data-aos="fade-up">
-                <Link to="/">
-                    <p className="text-base antialiased">Home</p>
-                </Link>
+                {
+                    navlinks.map((link, i) => {
+                        return(
+                        <li className="py-5 px-5 hover:text-blue-600 transition duration-200 hover:bg-gray-800 sm:hover:bg-transparent text-blue-700" data-aos="fade-up">
+                        <Link to={link.link}>
+                            <p className="text-base antialiased">{link.text}</p>
+                        </Link>
                 
-                </li>
-                <li className="text-blue-700 py-5 px-5 sm:border-b-2 border-transparent hover:text-blue-600 sm:hover:text-blue-300
-                 transition hover:bg-gray-800 duration-200 sm:hover:bg-transparent" data-aos="fade-down">
-                <Link to="/About">
-                    <p className="text-base antialiased">About</p>
-                </Link>
-                </li>
-                <li className="text-blue-700 py-5 px-5 sm:border-b-2 border-transparent hover:text-blue-600
-                 sm:hover:text-blue-300 transition hover:bg-gray-800 duration-200 sm:hover:bg-transparent" data-aos="fade-right">
-                <Link to="/Projects">
-                    <p className="text-base antialiased" >Projects</p>
-                </Link>
-                
-                </li>
-                <li className="text-blue-700 py-5 px-5 sm:border-b-2 border-transparent hover:text-blue-600 sm:hover:text-blue-300
-                 lg:hover:bg-gray-900 transition hover:bg-gray-800 duration-200 sm:hover:bg-transparent" data-aos="fade-left">
-                <Link to="/Links">
-                    <p className="text-base antialiased">Get in touch</p>
-                </Link>
-                </li>
+                        </li>
+                        )
+                    })    
+}
             </ul>
             </nav>
         </div>
