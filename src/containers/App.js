@@ -7,7 +7,7 @@ import ProjectList from "../components/ProjectList";
 import Links from "../components/Links"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
+import {BrowserRouter as Router, } from "react-router-dom"
 
 
 class App extends Component{
@@ -21,22 +21,26 @@ class App extends Component{
           {
           "id": 1,
           "image": null, 
-          "desc": "IT company website - Kebisglobal"
+          "desc": "IT company website - Kebisglobal",
+          "tags": ["React", "Tailwind", "Javascript"]
         },
         {
           "id":2,
           "image": null, 
-          "desc": "Pdf downloader"
+          "desc": "Pdf downloader",
+          "tags": ["Python"]
         },
         {
           "id": 3,
           "image": null, 
-          "desc": "Robofriends app"
+          "desc": "Employee-info-manager app",
+          "tags": ["React", "Tailwind", "Javascript"]
         },
         {
           "id": 4,
           "image": null, 
-          "desc": "Portfolio website"
+          "desc": "Portfolio website",
+          "tags": ["React", "Tailwind", "Javascript"]
         }
         ]
     }
@@ -57,17 +61,7 @@ class App extends Component{
             <ProjectList data ={Services}/>
           </div>
           <Links />
-       </div>
-      {/*
-        <Switch>
-         <Route path="/" exact component={Site} />
-         <Route path="/About" component={About} />
-         <Route path="/Projects" component={ProjectList} />
-         <Route path="/Links" component={Links} />
-       </Switch>
-
-      */}
-       
+       </div> 
       </Router>
     
   );
