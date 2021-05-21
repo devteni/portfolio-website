@@ -7,29 +7,6 @@ AOS.init({
     duration: 100
 })
 
-const navlinks = [
-    {
-        "text": "Home",
-        "link": "/"
-    }, 
-    {
-        "text": "Blog",
-        "link": "https://tenifatunmbi.hashnode.dev"
-    }, 
-    {
-        "text": "About",
-        "link": ""
-    }, 
-    {
-        "text": "Projects",
-        "link": ""
-    }, 
-    {
-        "text":"Get in touch",
-        "link": ""
-    }
-]
-console.log(navlinks.Home)
 const Navbar = () => {
     const handleClick = () => {
         const element = document.querySelector("#navContent");
@@ -56,18 +33,15 @@ const Navbar = () => {
                 </div>
         
             <ul className="hidden sm:flex cursor-pointer" id="navContent">
-                {
-                    navlinks.map((link, i) => {
-                        return(
-                        <li className="py-5 px-5 hover:text-blue-600 transition duration-200 hover:bg-gray-800 sm:hover:bg-transparent text-blue-700" data-aos="fade-up">
-                        <Link to={link.link}>
-                            <p className="text-base antialiased">{link.text}</p>
-                        </Link>
-                
-                        </li>
-                        )
-                    })    
-}
+                <li className="py-5 px-5 hover:text-blue-600 transition duration-200 hover:bg-gray-800 sm:hover:bg-transparent text-blue-700" data-aos="fade-up">
+                    <Link to="/">Home</Link>
+                </li>
+                <li className="py-5 px-5 hover:text-blue-600 transition duration-200 hover:bg-gray-800 sm:hover:bg-transparent text-blue-700" data-aos="fade-up">
+                    <a href="https://tenifatunmbi.hashnode.dev" target="_blank" rel="noreferrer">Blog</a>
+                </li>
+                <li className="py-5 px-5 hover:text-blue-600 transition duration-200 hover:bg-gray-800 sm:hover:bg-transparent text-blue-700" data-aos="fade-up">
+                    <Link to="/contact">Get in touch</Link>
+                </li>
             </ul>
             </nav>
         </div>
