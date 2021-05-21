@@ -13,22 +13,30 @@ class Home extends Component {
               {
               "id": 1,
               "desc": "Kebisglobal",
-              "tags": ["React", "Tailwind", "Javascript"]
+              "tags": ["React", "Tailwind", "Javascript"],
+              "live": "kebisglobal.netlify.app",
+              "repo": "https://github.com/Omoteniola-dev/kebisglobal"
             },
             {
               "id":2,
               "desc": "Pdf downloader",
-              "tags": ["Python"]
+              "tags": ["Python"],
+              "live": "",
+              "repo": "https://github.com/Omoteniola-dev/pdf-downloader"
             },
             {
               "id": 3,
               "desc": "Employee-info-manager app",
-              "tags": ["React", "Tailwind", "Javascript"]
+              "tags": ["React", "Tailwind", "Javascript"],
+              "live": "",
+              "repo": "https://github.com/Omoteniola-dev/employee-info-manager"
             },
             {
               "id": 4,
               "desc": "Portfolio website",
-              "tags": ["React", "Tailwind", "Javascript"]
+              "tags": ["React", "Tailwind", "Javascript"],
+              "live": "",
+              "repo": "https://github.com/Omoteniola-dev/portfolio-website"
             }
             ]
         }
