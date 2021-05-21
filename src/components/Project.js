@@ -1,18 +1,21 @@
 import React from "react";
 
-const Project = ({id, image, desc, tags}) => {
+const Project = ({id, desc, tags}) => {
     return (
-         <div className="m-10 p-10 ma-5 mb-4 w-4/5 h-auto shadow-lg lg:hover:bg-blue-300 
-         hover:shadow-md lg:w-1/3 h-auto mb-4 ml-8 bg-gray-100 justify-center lg:shadow-xl rounded-xl">
-             <div className="flex justify-end flex-row-reverse ">
+         <div className="lg:h-1/3 lg:w-1/3 m-5 p-4 w-full shadow-lg lg:hover:bg-gray-300 
+                    hover:shadow-md bg-gray-100 justify-center lg:shadow-xl rounded-xl" key={id}>
+             <p className="font-light text-base lg:text-xl">{desc}</p>
+             <div className="flex justify-end flex-row-reverse flex-wrap">
                 {
-                    tags.map((tag) => {
-                        return <span className="p-1 px-2 bg-gray-300 font-bold mx-2 rounded-xl">{tag}</span>
+                    tags.map((tag, i) => {
+                        return <span className="p-1 px-2 m-1 bg-gray-300 font-sm rounded-xl">{tag}</span>
                     })
                 }
              </div>
-            <img style={{width: '200px', height: '200px'}} alt="Project" src={image}/>
-            <p className="font-light text-base">{desc}</p>        
+             <section className="text-right">
+             <a href="" className="m-1"> Live </a>
+             <a href="">Repo</a>
+             </section>
         </div>       
             )
 }
