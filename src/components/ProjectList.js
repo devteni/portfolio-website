@@ -11,7 +11,9 @@ const ProjectList = ({data}) => {
                             id={data[i].id}
                             image={data[i].image} 
                             desc={data[i].desc}
-                            tags={data[i].tags}  />)
+                            tags={data[i].tags}
+                            live={data[i].live}
+                            repo={data[i].repo}  />)
                 })
             }
             </div>    
