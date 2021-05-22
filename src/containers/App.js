@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import './App.css';
 import Home from "./Home"
 import Navbar from '../components/Navbar'
-import Links from "../components/Links"
 
 import 'aos/dist/aos.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
@@ -20,9 +19,7 @@ class App extends Component{
               <Route path="/" exact component={Home} />
               <Route path="/contact" component={Contact} />
             </Switch>
-          </div>
-          <Links />
-       
+          </div>       
        </div>
        
       </Router>
