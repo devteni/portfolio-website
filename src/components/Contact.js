@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
     return(
         <div>
-            <p className="font-extrabold lg:text-3xl text-xl text-center m-16">
+            <p className="font-extrabold lg:text-3xl text-xl text-center m-16 lg:m-2 lg:mb-5">
                 Wanna reach out?
             </p>
             <>
