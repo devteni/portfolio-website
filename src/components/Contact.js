@@ -3,11 +3,11 @@ import React from "react";
 const Contact = () => {
     return(
         <div>
-            <p className="font-extrabold lg:text-3xl text-xl text-center m-16 lg:m-2 lg:mb-5">
-                Wanna reach out?
+            <p className="font-extrabold lg:text-3xl text-xl text-white text-center m-16 lg:m-2 lg:mb-5">
+                Contact
             </p>
             <>
-                <form action="" method="POST" className="max-w-lg mx-auto">
+                <form action="https://formspree.io/f/xayaorwg" method="POST" className="max-w-lg mx-auto">
                 <div className="grid gap-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2">
                     <div className="w-full">
                         <span className="px-5 py-1.5 bg-gray-800 text-white rounded-full text-sm font-semibold tracking-tighter">Your Name*</span>
