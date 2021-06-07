@@ -9,31 +9,35 @@ class Home extends Component {
           duration: 1200
         })
         this.state = {
-            Services: [
+            projects: [
               {
               "id": 1,
-              "desc": "Kebisglobal",
+              "title": "Kebisglobal",
+              "desc": "An IT consulting company's website(In development)",
               "tags": ["React", "Tailwind", "Javascript"],
               "live": "kebisglobal.netlify.app",
               "repo": "https://github.com/Omoteniola-dev/kebisglobal"
             },
             {
               "id":2,
-              "desc": "Pdf downloader",
+              "title": "Pdf downloader",
+              "desc": "A python script to download pdf's from a url",
               "tags": ["Python"],
               "live": "",
               "repo": "https://github.com/Omoteniola-dev/pdf-downloader"
             },
             {
               "id": 3,
-              "desc": "Employee-info-manager app",
+              "title": "Employee-info-manager app",
+              "desc": "A react app that displays information about users from an API",
               "tags": ["React", "Tailwind", "Javascript"],
               "live": "",
               "repo": "https://github.com/Omoteniola-dev/employee-info-manager"
             },
             {
               "id": 4,
-              "desc": "Portfolio website",
+              "title": "Portfolio website",
+              "desc": "My portfolio website - yeah, this one.",
               "tags": ["React", "Tailwind", "Javascript"],
               "live": "",
               "repo": "https://github.com/Omoteniola-dev/portfolio-website"
@@ -45,11 +49,11 @@ class Home extends Component {
         AOS.refresh()
       }
     render(){
-        const { Services } = this.state;
+        const { projects } = this.state;
         return(
         <div>
             <Site />
-            <ProjectList data={Services}/>
+            <ProjectList data={projects}/>
         </div>
     )
     }
