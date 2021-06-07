@@ -14,7 +14,7 @@ class App extends Component{
       <Router>
         <div >
           <Navbar />
-          <div className="lg:p-32 p-5">
+          <div className="lg:p-14 p-5">
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/contact" component={Contact} />
