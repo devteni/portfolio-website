@@ -39,8 +39,8 @@ function Site() {
           <p className="text-3xl font-bold lg:text-5xl lg:w-3/5">Hi! I'm Teniola.
           I <span className="text-gray-500">build stuffs that work on the web</span> and also <span className="text-gray-500">write about them</span>.</p>
         </>
-        <p className="text-center text-xl border-solid bor border-blue-700 p-3 m-5">
-          <Link to="/contact" >
+        <p className="text-center text-xl border-solid border-2 border-gray-700 p-3 m-5 lg:hover:bg-gray-400 text-blue-700 transition duration-200">
+          <Link to="/contact">
               Contact
           </Link>
         </p>
