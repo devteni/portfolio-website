@@ -1,20 +1,21 @@
 import React from "react";
 
-const Project = ({id, desc, tags, live, repo}) => {
+const Project = ({id, title, desc, tags, live, repo}) => {
     return (
-         <div className="lg:h-1/3 lg:w-1/3 m-5 p-4 w-full shadow-lg
-                    hover:shadow-md bg-gray-100 justify-center lg:shadow-xl rounded-lg" key={id}>
-             <p className="font-light text-base lg:text-lg">{desc}</p>
-             <div className="flex justify-end flex-row-reverse flex-wrap">
+         <div className="lg:w-1/3 m-5 p-4 w-full shadow-lg
+                    hover:shadow-md bg-gray-500 text-white font-bold justify-center lg:shadow-xl rounded-lg" key={id}>
+             <p className="text-base lg:text-lg px-3 pb-0">{title}</p>
+             <div className="flex justify-end flex-row-reverse flex-wrap p-1">
                 {
                     tags.map((tag, i) => {
-                        return <span className="p-1 px-2 m-1 bg-gray-300 font-sm text-sm rounded-xl">{tag}</span>
+                        return <span className="p-1 px-2 m-1 bg-gray-400 font-sm text-sm rounded-xl">{tag}</span>
                     })
                 }
              </div>
+             <p className="p-2">{desc}</p>
              <section className="text-right font-sm text-sm ">
-             <a href={live} className="m-1 hover:text-gray-500"> Live </a>
-             <a href={repo} className="hover:text-gray-700">Repo</a>
+             <a href={live} className="m-1 hover:text-gray-200"> Live </a>
+             <a href={repo} className="hover:text-gray-200">Repo</a>
              </section>
         </div>       
             )
