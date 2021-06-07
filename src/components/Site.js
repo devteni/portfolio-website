@@ -26,7 +26,7 @@ const social = [
 function Site() {
   return (
     <>
-    <img src={Teni} alt="Teniola Fatunmbi" className="rounded-full lg:w-0.5 w-2/5 lg:my-32 mx-10 mt-14 lg:my-4"/>
+    <img src={Teni} alt="Teniola Fatunmbi" className="rounded-full lg:w-1/5 w-2/5 lg:my-32 mx-10 mt-14 lg:my-4"/>
       <div id="About" className="flex flex-wrap text-gray-300 text-center text-white lg:w-3/4" data-aos="fade-up">
         <div className="flex flex-row flex-wrap justify-center mx-10">
           {
