@@ -15,7 +15,7 @@ class Home extends Component {
               "title": "Kebisglobal",
               "desc": "An IT consulting company's website(In development)",
               "tags": ["React", "Tailwind", "Javascript"],
-              "live": "kebisglobal.netlify.app",
+              "live": "https://kebisglobal.netlify.app",
               "repo": "https://github.com/Omoteniola-dev/kebisglobal"
             },
             {
