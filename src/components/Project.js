@@ -14,7 +14,7 @@ const Project = ({id, title, desc, tags, live, repo}) => {
              </div>
              <p className="p-2">{desc}</p>
              <section className="text-right font-sm text-sm ">
-             <a href={live} className="m-1 hover:text-gray-200"> Live </a>
+             <a href={live} target="_blank" rel="noreferrer" className="m-1 hover:text-gray-200"> Live </a>
              <a href={repo} className="hover:text-gray-200">Repo</a>
              </section>
         </div>       
