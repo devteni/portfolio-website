@@ -1,7 +1,7 @@
 import React from "react";
 //import Teni from "../Teniola.jpg";
 
-const skills = [ "HTML & CSS", "JAVASCRIPT", "REACTJS", "PYTHON", "GIT"]
+const skills = [ "HTML & CSS", "JAVASCRIPT", "REACTJS", "NODEJS", "MONGODB", "PYTHON", "GIT"]
 const About = () => {
     return(
             <div data-aos="fade-down">
