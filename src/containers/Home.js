@@ -11,7 +11,23 @@ class Home extends Component {
         this.state = {
             projects: [
               {
-              "id": 1,
+                "id": 1,
+                "title": "Search4me",
+                "desc": "An cross platform application designed to report missing persons",
+                "tags": ["Nodejs"],
+                "live": "https://search4moi.netlify.app",
+                "repo": "https://github.com/devteni/search-for-me-be-pjt-26"
+              },
+              {
+                "id": 6,
+                "title": "Bookstore application",
+                "desc": "A bookstore web application in node",
+                "tags": ["Nodejs"],
+                "live": "",
+                "repo": "https://github.com/devteni/bookstore-app"
+              },
+              {
+              "id": 2,
               "title": "Kebisglobal",
               "desc": "An IT consulting company's website(In development)",
               "tags": ["React", "Tailwind", "Javascript"],
@@ -19,7 +35,7 @@ class Home extends Component {
               "repo": "https://github.com/Omoteniola-dev/kebisglobal"
             },
             {
-              "id":2,
+              "id":3,
               "title": "Pdf downloader",
               "desc": "A python script to download pdf's from a url",
               "tags": ["Python"],
@@ -27,7 +43,7 @@ class Home extends Component {
               "repo": "https://github.com/Omoteniola-dev/pdf-downloader"
             },
             {
-              "id": 3,
+              "id": 4,
               "title": "Employee-info-manager app",
               "desc": "A react app that displays information about users from an API",
               "tags": ["React", "Tailwind", "Javascript"],
@@ -35,13 +51,13 @@ class Home extends Component {
               "repo": "https://github.com/Omoteniola-dev/employee-info-manager"
             },
             {
-              "id": 4,
+              "id": 5,
               "title": "Portfolio website",
               "desc": "My portfolio website - yeah, this one.",
               "tags": ["React", "Tailwind", "Javascript"],
               "live": "",
               "repo": "https://github.com/Omoteniola-dev/portfolio-website"
-            }
+            },
             ]
         }
     }
