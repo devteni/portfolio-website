@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const social = [
   {
     "svg": github,
-    "link": "https://github.com/Omoteniola-dev",
+    "link": "https://github.com/devteni",
     "alt": "Teniola's github profile"
   },
   {
@@ -18,7 +18,7 @@ const social = [
   },
   {
     "svg": twitter,
-    "link": "https://twitter.com/Omoteniola_dev",
+    "link": "https://twitter.com/devteni",
     "alt": "Teniola's twitter profile"
   }
 ]
