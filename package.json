@@ -8,6 +8,11 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
     "aos": "^3.0.0-beta.6",
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3",
+    "nodemon": "^2.0.12",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -16,6 +21,7 @@
   },
   "scripts": {
     "start": "craco start",
+    "dev": "concurrently \"nodemon src/server.js\" \"npm start\"",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
