@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 import './App.css';
-import Home from "./Home"
+import Home from "../pages/Home"
 import Navbar from '../components/Navbar'
 
 import 'aos/dist/aos.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Contact from "../components/Contact";
+import Contact from "../pages/Contact";
 
 
 class App extends Component{
