@@ -1,5 +1,14 @@
 import React from "react";
 
+const Label = ({ live, repo }) => {
+    return(
+        <section className="text-right font-sm text-sm">
+             <a href={live} target="_blank" rel="noreferrer" className="m-1 hover:text-gray-200"> Live </a>
+             <a href={repo} className="hover:text-gray-200">Repo</a>
+        </section>
+    )
+}
+
 const Project = ({id, title, desc, tags, live, repo}) => {
     return (
          <div className="lg:w-1/3 m-5 p-4 w-full shadow-lg
@@ -13,10 +22,7 @@ const Project = ({id, title, desc, tags, live, repo}) => {
                 }
              </div>
              <p className="p-2">{desc}</p>
-             <section className="text-right font-sm text-sm ">
-             <a href={live} target="_blank" rel="noreferrer" className="m-1 hover:text-gray-200"> Live </a>
-             <a href={repo} className="hover:text-gray-200">Repo</a>
-             </section>
+             <Label live={live} repo={repo}/>
         </div>       
             )
 }
