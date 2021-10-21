@@ -8,3 +8,64 @@
 [aos="fade"].aos-animate {
     opacity: 1;
   }
+
+img {
+  object-fit: cover;
+}
+
+.abt{
+  color: linear-gradient(to right, gray 24%, white 20%, red 66%)
+}
+
+.project{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: rgba(55, 60, 70, 0.533);
+  box-shadow: 5px 5px 5px rgb(40, 44, 52, 0.5), -5px -5px 5px rgb(40, 44, 52);
+}
+
+.label{
+  margin: 7rem 0px;
+}
+
+.label > a:hover{
+  border-bottom: 1px solid white;
+}
+
+#about{
+  height: 100vh;
+}
+
+.contact-btn{
+  padding: 14px 10px;
+  height: 4rem;
+  width: 9rem;
+  margin: 1rem 3rem;
+  float: left;
+  border: 1px solid gray;
+  font-size: 20px;
+  transition: .3s ease-in-out;
+  /* box-shadow: 15px 15px 50px white, -15px -15px -50px rgb(40, 44, 52); */
+}
+
+.contact-act {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+
+.contact-btn:hover{
+  background: linear-gradient(to right, gray 0%, rgb(40, 44, 52) 100%);
+  transform: scale(1.2);
+  
+  
+}
+
+
+
+#navContent > li > *:hover{
+  border-bottom: 2px solid white;
+  transition: .4s;
+}
