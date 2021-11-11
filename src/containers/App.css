@@ -42,7 +42,7 @@ img {
   padding: 14px 10px;
   height: 4rem;
   width: 9rem;
-  margin: 1rem 3rem;
+  margin: 1rem 1rem;
   float: left;
   border: 1px solid gray;
   font-size: 20px;
@@ -58,9 +58,7 @@ img {
 
 .contact-btn:hover{
   background: linear-gradient(to right, gray 0%, rgb(40, 44, 52) 100%);
-  transform: scale(1.2);
-  
-  
+  transform: scale(1.1);
 }
 
 

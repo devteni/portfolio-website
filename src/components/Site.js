@@ -7,11 +7,11 @@ function Site() {
       <div id="about" className="flex flex-wrap justify-center text-gray-300 text-center text-white lg:w-3/4 
       lg:mt-32 mx-10 mt-14 p-8" data-aos="fade-up">
         <div className="tracking-widest">
-          <p className="text-3xl font-bold lg:text-5xl lg:w-3/5">Hi! I'm Teniola.
+          <p className="text-left font-bold lg:w-3/5"><span className="text-3xl lg:text-4xl">Hi! I'm Teniola.</span><br />
           I <span className="text-gray-500">build stuffs that work on computers</span> and also <span className="text-gray-500">write about them</span>.
           </p>
           <p className="" data-aos="fade-right">
-            <Link to="#contact" className="contact-btn">
+            <Link to="/contact" className="contact-btn">
                 Contact <i className="fas fa-envelope env"></i>
             </Link>
           </p>
