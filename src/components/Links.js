@@ -8,7 +8,7 @@ const social = [
     },
     {
       "icon": "fab fa-linkedin",
-      "link": "https://linkedin.com/teniolafatunmbi",
+      "link": "https://linkedin.com/in/teniolafatunmbi",
     },
     {
       "icon": "fab fa-twitter",
@@ -25,7 +25,7 @@ const Links = () => {
                     {
                         social.map((link, i) => {
                         return (
-                            <li className="my-2 mx-3 p-3 transition duration-200">
+                            <li className="my-2 mx-1 p-3 transition duration-200">
                                 <a href={link.link} target="_blank" rel="noreferrer">
                                     <p className="text-2xl text-white"><i class={link.icon}></i></p>
                                 </a>
