@@ -25,9 +25,9 @@ const Links = () => {
                     {
                         social.map((link, i) => {
                         return (
-                            <li className="my-2 mx-1 p-3 transition duration-200">
+                            <li className="my-2 mx-1 p-3 transition duration-200" key={i}>
                                 <a href={link.link} target="_blank" rel="noreferrer">
-                                    <p className="text-2xl text-white"><i class={link.icon}></i></p>
+                                    <p className="text-2xl text-white"><i className={link.icon}></i></p>
                                 </a>
                             </li>
                             )

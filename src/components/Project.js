@@ -16,16 +16,16 @@ const Project = ({id, image, title, desc, tags, live, repo}) => {
                 <img src={image} alt="" className="h-full"/>
             </div>
             <div className="lg:w-1/3 p-4 w-full shadow-lg
-                    hover:shadow-md text-white font-bold justify-center lg:shadow-xl rounded-lg h-1/3" key={id}>
+                    hover:shadow-md text-white font-light justify-center lg:shadow-xl rounded-lg h-1/3" key={id}>
                 <p className="text-base lg:text-lg px-3 pb-0">{title}</p>
                 <div className="flex justify-end flex-row-reverse flex-wrap p-1">
                     {
                         tags.map((tag, i) => {
-                            return <span className="p-1 px-2 m-1 bg-gray-400 font-sm text-sm rounded-xl">{tag}</span>
+                            return <span className="p-1 px-2 m-1 bg-gray-400 font-sm text-sm rounded-xl" key={i}>{tag}</span>
                         })
                     }
                 </div>
-                <p className="p-2">{desc}</p>
+                <p className="p-2 font-light">{desc}</p>
                 <Label live={live} repo={repo}/>
             </div>  
         </div>
