@@ -11,17 +11,21 @@ AOS.init({
 const Navbar = () => {
     const handleClick = () => {
         const element = document.querySelector("#navContent");
-        element.classList.toggle("block");
+        element.classList.toggle("open");
         element.classList.toggle("hidden");
       };
 
       return (
         <div data-aos="fade-down">
-            <nav className="fixed w-screen lg:px-10 sm:px-10 px-2 sm:flex justify-between border-gray-600 z-10 bg-gray" style={{"background": "#282c34"}} data-aos="fade-left">
+            <nav className="fixed w-screen lg:px-10 sm:px-10 px-2 sm:flex justify-between border-gray-600 z-10 bg-gray" 
+            style={{
+                "background": "#282c34",
+                "transition": "all 3s ease-out"
+                }}>
                 <div className="flex px-4 justify-between sm:py-0 pb-1">
                     <img
                      src=""
-                    alt="..."
+                    alt="-Home"
                     className="h-12 m-3"
                     />
                 <button
@@ -32,7 +36,8 @@ const Navbar = () => {
                 </button>
                 </div>
         
-            <ul className="hidden sm:flex cursor-pointer text-white" id="navContent">
+            <ul className="hidden sm:flex cursor-pointer text-white open"
+            id="navContent">
                 <li className="py-5 px-5 transition duration-200 hover:bg-gray-800 sm:hover:bg-transparent" data-aos="fade-up">
                     <Link to="/">Home</Link>
                 </li>
