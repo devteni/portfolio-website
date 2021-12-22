@@ -13,9 +13,9 @@ img {
   object-fit: cover;
 }
 
-.abt{
+/* .abt{
   color: linear-gradient(to right, gray 24%, white 20%, red 66%)
-}
+} */
 
 .project{
   display: flex;
@@ -34,10 +34,6 @@ img {
   border-bottom: 1px solid white;
 }
 
-#about{
-  height: 100vh;
-}
-
 .contact-btn{
   padding: 14px 10px;
   height: 4rem;
@@ -46,24 +42,67 @@ img {
   float: left;
   border: 1px solid gray;
   font-size: 20px;
-  transition: .3s ease-in-out;
-  /* box-shadow: 15px 15px 50px white, -15px -15px -50px rgb(40, 44, 52); */
+  transition: .3s ease-in;
 }
 
 .contact-act {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
 }
 
 .contact-btn:hover{
   background: linear-gradient(to right, gray 0%, rgb(40, 44, 52) 100%);
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 
 
+@media screen and (max-width: 768px) {
+  #navContent{
+    clip-path: circle(300px at 100% -10%);
+    -webkit-clip-path: circle(300px at 90% -10%);
+    transition: all 3s ease-out;
+    background-color: rgba(43, 63, 99, 0.253);
+    color: white;
+    text-align: end;
+    height: 100%;
+  }
+
+  #navContent.open{
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+
+  * {
+    font-size: large;
+  }
+  #about{
+    margin-top: 7em;
+  }
+}
+@media screen and (max-width: 320px) {
+  #about{
+    margin-top: 4.2em;
+  }
+
+  .contact-btn{
+    padding: 12px 8px;
+    height: 4rem;
+    width: 9rem;
+  }
+
+  .contact-btn:hover{
+    background: linear-gradient(to right, gray 0%, rgb(40, 44, 52) 100%);
+    transform: scale(1.01);
+  }
+}
 #navContent > li > *:hover{
   border-bottom: 2px solid white;
   transition: .4s;
+}
+
+
+.static-abt{
+  position: absolute;
+  width: 40vw;
 }
