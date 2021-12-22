@@ -27,8 +27,8 @@ const Contact = () => {
     alert(result.status);
     }
     return(
-        <div className="m-10" data-aos="fade-right" data-aos-delay="300" id="contact">
-            <p className="font-extrabold lg:text-3xl text-xl text-white text-center mt-10 lg:m-2 lg:mb-5">
+        <div className="m-10" id="contact">
+            <p className="font-extrabold lg:text-3xl text-xl text-white text-center mt-10 lg:m-2 lg:mb-5 border-b-1 mb-2">
                 Wanna say hi?
             </p>
             <div className="md:flex-1 flex-auto flex-wrap">
