@@ -27,12 +27,12 @@ class Home extends Component {
               },
               {
                 "id": 6,
-                "title": "Bookstore application",
+                "title": "Stock manager",
                 "image": "",
-                "desc": "A bookstore web application built with Nodejs and MongoDB",
+                "desc": "A fullstack application that allows users to invest their assets and take loans (WIP)",
                 "tags": ["Nodejs", "MongoDB"],
-                "live": `${repoURI}bookstore-app`,
-                "repo": `${repoURI}bookstore-app`
+                "live": `${repoURI}stock-manager`,
+                "repo": `${repoURI}stock-manager`
               },
               {
               "id": 2,
