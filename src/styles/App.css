@@ -75,17 +75,10 @@ img {
   #navContent{
     clip-path: circle(300px at 100% -10%);
     -webkit-clip-path: circle(300px at 90% -10%);
-    transition: all 3s ease-out;
     background-color: rgba(43, 63, 99, 0.253);
     color: white;
     text-align: end;
     height: 100%;
-  }
-
-  #navContent.hidden{
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-    pointer-events: all;
   }
 
   * {
