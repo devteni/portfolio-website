@@ -1,6 +1,6 @@
 import AOS from "aos";
 import React from "react";
-import menu from "../assets/menu.png"
+import menu from "../assets/images/menu.png"
 import { Link } from "react-router-dom";
 
 AOS.init({
@@ -11,11 +11,10 @@ AOS.init({
 const Navbar = () => {
     const handleClick = () => {
         const element = document.querySelector("#navContent");
-        element.classList.toggle("open");
         element.classList.toggle("hidden");
       };
 
-      return (
+      return ( 
         <div data-aos="fade-down">
             <nav className="fixed w-screen lg:px-10 sm:px-10 px-2 sm:flex justify-between border-gray-600 z-10 bg-gray" 
             style={{
@@ -23,11 +22,9 @@ const Navbar = () => {
                 "transition": "all 3s ease-out"
                 }}>
                 <div className="flex px-4 justify-between sm:py-0 pb-1">
-                    <img
-                     src=""
-                    alt="-Home"
-                    className="h-12 m-3"
-                    />
+                    <p className="text-white font-sm">
+                        
+                    </p>
                 <button
                     className="text-blue-700 text-3xl sm:hidden block focus:outline-none"
                     onClick={handleClick}

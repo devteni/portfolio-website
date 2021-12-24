@@ -1,5 +1,5 @@
 import React from "react";
-import "../containers/App.css";
+import "../styles/App.css";
 
 const social = [
     {
@@ -17,7 +17,7 @@ const social = [
   ];
 const Links = () => {
     return(
-        <div className="">
+        <div>
             <nav className="lg:px-10 sm:px-10 px-2 sm:flex justify-center border-gray-600 z-10 center"> 
         
             <ul className="sm:flex cursor-pointer" id="Links">

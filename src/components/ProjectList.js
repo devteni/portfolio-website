@@ -3,10 +3,13 @@ import Project from "./Project";
 
 const ProjectList = ({data}) => {
     return(
-        <div className="mt-10 border-gray-900" id="Projects" data-aos="fade-up">
-        <p className="transition-1000 text-center mb-4 pb-2 font-bold lg:font-extrabold text-3xl text-white border-b-2 border-gray-100">
+        <div className="mt-10 border-gray-900" id="projects" data-aos="fade-up">
+        {/* <p className="transition-1000 text-center mb-4 pb-2 font-bold lg:font-extrabold text-3xl text-white border-b-2 border-gray-100">
             Projects
-            </p>   
+            </p>    */}
+            <h1 className="project-title">
+                projects
+            </h1>
             <div className="flex flex-wrap flex-row lg:justify-center lg:flex-row flex-wrap">
                 {
                 data.map((project, i) => {

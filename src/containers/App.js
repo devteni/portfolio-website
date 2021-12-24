@@ -1,11 +1,12 @@
 import React, {Component} from "react";
-import './App.css';
+import '../styles/App.css';
 import Home from "../pages/Home"
 import Navbar from '../components/Navbar'
 import 'aos/dist/aos.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import About from "../pages/About"
 import Contact from "../pages/Contact";
+import Links from "../components/Links";
 
 
 class App extends Component{
@@ -20,7 +21,8 @@ class App extends Component{
               <Route path="/about" component={About} />
             </Switch>
           </div>
-          <Contact />       
+          <Contact /> 
+          <Links />      
        </div> 
       </Router>
     

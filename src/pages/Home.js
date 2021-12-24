@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import ProjectList from "../components/ProjectList";
 import Site from "../components/Site";
 import AOS from 'aos';
-import kebisglobal from '../assets/kebisglobal.png';
-import pdfdownloader from '../assets/pdfdownloader.png';
-import search4me from '../assets/search4me.png';
-import portfolio from '../assets/portfolio.png';
+import kebisglobal from '../assets/images/kebisglobal.png';
+import pdfdownloader from '../assets/images/pdfdownloader.png';
+import search4me from '../assets/images/search4me.png';
+import portfolio from '../assets/images/portfolio.png';
 
 class Home extends Component {
     constructor(){
