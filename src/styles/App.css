@@ -82,12 +82,16 @@ img {
     height: 100%;
   }
 
-  /* * {
-    font-size: large;
-  } */
+  #about{
+    margin-top: 8em;
+  }
 
   .contact-btn{
-    margin: 1em 1em;
+    padding: 12px 12px;
+    height: 3.5rem;
+    width: 8rem;
+    font-size: 16px;
+    margin: 8em 0;
   }
 
   .project-title{
@@ -99,21 +103,27 @@ img {
     right: 100px;
     text-align: center;
     transform: translate(0, 20px);
-  }
-  
-  
+  }  
 }
 
 @media screen and (max-width: 320px) {
   .contact-btn{
-    padding: 12px 8px;
-    height: 4rem;
-    width: 9rem;
+    padding: 10px 12px;
+    height: 3rem;
+    width: 6rem;
+    font-size: 14px;
+    margin: 4em 6px;
   }
 
   .contact-btn:hover{
     background: linear-gradient(to right, gray 0%, rgb(40, 44, 52) 100%);
     transform: scale(1.01);
   }
+
+  #about{
+    margin-top: 6em;
+  }
 }
+
+
 
