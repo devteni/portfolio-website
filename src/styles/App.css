@@ -72,6 +72,20 @@ img {
   transition: .4s;
 }
 
+#hero{
+  width: 100%;
+  height: 90vh;
+}
+
+.hero-container{
+  width: 90%;
+  max-width: 90%;
+  height: 100%;
+  gap: 6em;
+  margin: auto auto;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   #navContent{
     clip-path: circle(300px at 100% -10%);
@@ -82,8 +96,9 @@ img {
     height: 100%;
   }
 
-  #about{
+  #hero{
     margin-top: 8em;
+    gap: 6em;
   }
 
   .contact-btn{
@@ -91,7 +106,7 @@ img {
     height: 3.5rem;
     width: 8rem;
     font-size: 16px;
-    margin: 8em 0;
+    margin: 8em 10px;
   }
 
   .project-title{
@@ -120,7 +135,7 @@ img {
     transform: scale(1.01);
   }
 
-  #about{
+  #hero{
     margin-top: 6em;
   }
 }

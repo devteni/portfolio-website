@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProjectList from "../components/ProjectList";
-import Site from "../components/Site";
+import Hero from "../components/Hero";
 import AOS from 'aos';
 import kebisglobal from '../assets/images/kebisglobal.png';
 import pdfdownloader from '../assets/images/pdfdownloader.png';
@@ -71,7 +71,7 @@ class Home extends Component {
         const { projects } = this.assets;
         return(
         <div>
-            <Site />
+            <Hero />
             <ProjectList data={projects}/>
         </div>
     )
