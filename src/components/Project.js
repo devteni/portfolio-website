@@ -13,8 +13,8 @@ const Project = ({id, image, title, desc, tags, live, repo}) => {
     return (
         <div id="project" className="project lg:w-4/5 w-full my-5 lg:px-10 lg:py-4 px-4 py-2 rounded-sm">
             <div className="layer-1">
-                <div className="lg:w-2/3 lg:mt-20 lg:px-4 mt-10 text-center">
-                    <img src={image} alt="" className="lg:h-3/4 h-full rounded-md"/>
+                <div className="lg:w-2/3 lg:mt-20 lg:px-4 mt-10 text-center text-white">
+                    <img src={image} alt="COMING SOON ..." className="lg:h-3/4 h-full rounded-md"/>
                 </div>
                 <div className="lg:w-1/3 py-4 lg:mt-14 w-full
                 text-white font-light justify-center rounded-lg h-1/3" key={id}>
