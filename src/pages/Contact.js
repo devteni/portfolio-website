@@ -57,9 +57,6 @@ const Contact = () => {
                     {status}
                 </button>
                 </form>
-                <div className="w-auto">
-                    <Links />
-                </div>
             </div>
         </div>
     )

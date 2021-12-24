@@ -3,8 +3,8 @@ import React from "react";
 const Label = ({ live, repo }) => {
     return(
         <section className="text-right font-sm text-sm label ">
-             <a href={live} target="_blank" rel="noreferrer" className="m-3 hover:text-gray-200"> Live </a>
-             <a href={repo} className="m-3 hover:text-gray-200">Repo</a>
+             <a href={live} target="_blank" rel="noreferrer" className="m-3 text-gray-200"> Live </a>
+             <a href={repo} className="m-3 text-gray-200">Repo</a>
         </section>
     )
 }

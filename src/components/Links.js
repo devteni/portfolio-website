@@ -18,7 +18,7 @@ const social = [
 const Links = () => {
     return(
         <div>
-            <nav className="lg:px-10 sm:px-10 px-2 sm:flex justify-center border-gray-600 z-10 center"> 
+            <nav className="lg:px-10 py-4 px-2 sm:flex justify-center border-gray-600 z-10 center"> 
         
             <ul className="sm:flex cursor-pointer" id="Links">
                 <div className="flex flex-row flex-wrap justify-center lg:mx-10 mx-5">

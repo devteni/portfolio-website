@@ -50,11 +50,12 @@ img {
   padding: 14px 10px;
   height: 4rem;
   width: 9rem;
-  margin: 6em 1em;
+  margin: 4em 1em;
   float: left;
   border: 1px solid gray;
   font-size: 20px;
   transition: .3s ease-in;
+  cursor: pointer;
 }
 
 .contact-act {
@@ -81,9 +82,9 @@ img {
     height: 100%;
   }
 
-  * {
+  /* * {
     font-size: large;
-  }
+  } */
 
   .contact-btn{
     margin: 1em 1em;
@@ -102,6 +103,7 @@ img {
   
   
 }
+
 @media screen and (max-width: 320px) {
   .contact-btn{
     padding: 12px 8px;

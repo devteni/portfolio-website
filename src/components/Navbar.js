@@ -21,9 +21,9 @@ const Navbar = () => {
                 "background": "#282c34",
                 "transition": "all 3s ease-out"
                 }}>
-                <div className="flex px-4 justify-between sm:py-0 pb-1">
-                    <p className="text-white font-sm">
-                        
+                <div className="flex px-4 justify-between">
+                    <p className="text-white py-4">
+                        devteni
                     </p>
                 <button
                     className="text-blue-700 text-3xl sm:hidden block focus:outline-none"
